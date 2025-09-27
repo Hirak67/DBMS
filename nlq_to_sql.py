@@ -3,14 +3,14 @@ def nlq_to_sql(nlq):
 
     # Marks sorting
     if "marks" in nlq:
-        if "desc" in nlq or "descending" in nlq or "highest" in nlq:
+        if "desc" in nlq or "descending" in nlq:
             return "SELECT * FROM students ORDER BY marks DESC;"
-        elif "asc" in nlq or "ascending" in nlq or "lowest" in nlq:
+        elif "asc" in nlq or "ascending" in nlq:
             return "SELECT * FROM students ORDER BY marks ASC;"
 
     # Name sorting
     if "name" in nlq:
-        if "desc" in nlq or "reverse" in nlq or "z to a" in nlq:
+        if "desc" in nlq or "reverse" in nlq:
             return "SELECT * FROM students ORDER BY name DESC;"
         else:
             return "SELECT * FROM students ORDER BY name ASC;"
@@ -24,13 +24,11 @@ def nlq_to_sql(nlq):
 
     # For Multiple columns and different commands
     if "column1" in nlq and "column2" in nlq:
-        
         if "column1 in desc" in nlq or "column1 in descending" in nlq:
             col1_order = "DESC"
         else:
             col1_order = "ASC"
 
-        
         if "column2 in desc" in nlq or "column2 in descending" in nlq:
             col2_order = "DESC"
         else:
@@ -41,4 +39,5 @@ def nlq_to_sql(nlq):
     return "Wrong query"
 myinput= input("Enter your query in plain English: ")
 print("SQL:", nlq_to_sql(myinput))
+
 
