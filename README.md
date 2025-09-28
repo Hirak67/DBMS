@@ -33,10 +33,11 @@ SELECT * FROM students ORDER BY age ASC;
 -- Sort by name alphabetically
 SELECT * FROM students ORDER BY name ASC;
 
-### THERE IS A FILE NAMES nlq_to_sql.py . WHICH IS A PYTHON FILE SO THAT USER CAN FIND THE QUERIES FOR SPECIFIED WORK TO DONE
-
 --sort by name in reverse
 SELECT * FROM students ORDER BY name DESC;
 
 --use of multiple column 
 SELECT * FROM students ORDER BY column1 (DESC/ASC) , column2 (DESC/ASC);
+
+
+### THERE IS A FILE NAMES nlq_to_sql.py . WHICH IS A PYTHON FILE SO THAT USER CAN FIND THE QUERIES FOR SPECIFIED WORK TO DONE
