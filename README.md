@@ -40,4 +40,4 @@ SELECT * FROM students ORDER BY name DESC;
 SELECT * FROM students ORDER BY column1 (DESC/ASC) , column2 (DESC/ASC);
 
 
-### THERE IS A FILE NAMED nlq_to_sql.py . WHICH IS A PYTHON FILE SO THAT USER CAN FIND THE QUERIES FOR SPECIFIC WORK TO DONE
+### There is a Python file named nlq_to_sql.py. This program allows the user to generate SQL queries for specific tasks by entering simple English commands (for example, “marks in descending”). The program then returns the corresponding SQL query as output.
