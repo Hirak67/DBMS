@@ -2,13 +2,11 @@
 
 A MySQL database project demonstrating the use of the **ORDER BY** clause . The project sorts student records by different fields such as marks, age, and names.
 
-## 📘 Project Description
+## Project Description
 
 This project creates a student database with student data includes (name,age,marks) , showcasing the **ORDER BY** clause in SQL to sort records in ascending and descending order.
 
-## 🚀 Quick Start
-
-### Example
+## Example
 CREATE DATABASE IF NOT EXISTS student_db;
 USE student_db;
 CREATE TABLE students (
@@ -34,6 +32,8 @@ SELECT * FROM students ORDER BY age ASC;
 
 -- Sort by name alphabetically
 SELECT * FROM students ORDER BY name ASC;
+
+### THERE IS A FILE NAMES nlq_to_sql.py . WHICH IS A PYTHON FILE SO THAT USER CAN FIND THE QUERIES FOR SPECIFIED WORK TO DONE
 
 --sort by name in reverse
 SELECT * FROM students ORDER BY name DESC;
